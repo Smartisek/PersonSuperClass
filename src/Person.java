@@ -5,6 +5,11 @@ public class Person {
     private String name;
     private int date_of_birth;
 
+    public Person(String name, int date_of_birth) {
+        this.name = name;
+        this.date_of_birth = date_of_birth;
+    }
+
     public String getName() {
         return name;
     }

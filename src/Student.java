@@ -4,9 +4,9 @@ public class Student extends Person{
     private String major;
 
     public Student(String name, int date_of_birth, String major){
-        super(name);
-        super(date_of_birth);
+       super(name, date_of_birth);
         this.major = major;
+
     }
 
     @Override
