@@ -16,12 +16,16 @@ public class Main {
 
         Student student3 = new Student("Luke",2002, "Engineering");
 
+        Student student4 = new Student("Adin", 2000, "Business");
+
         Instructor instructor1 = new Instructor("Dermont", 1985, 60000.00f);
         System.out.println(instructor1);
 
         students.add(student1);
         students.add(student2);
         students.add(student3);
+        students.add(student4);
+
         Collections.sort(students);
         System.out.println(students);
 
@@ -43,7 +47,11 @@ public class Main {
         } else{
             System.out.println("Not found");
         }
+
+        System.out.println("Is instance of person?");
+        System.out.println(instructor1 instanceof Person);
+
+        students.sort(Comparator.naturalOrder());
+        System.out.println(students);
     }
-
-
 }
